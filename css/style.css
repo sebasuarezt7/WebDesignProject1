@@ -7,7 +7,7 @@ html {
 body {
     font-family: 'Lora', serif;
 }
-
+/* here start the navegation part */
 nav {
     position: fixed;
     top: 0;
@@ -16,9 +16,6 @@ nav {
     padding: 10px 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-nav hover{
-    color:black
 }
 nav ul {
     display: flex;
@@ -44,7 +41,7 @@ nav ul li a:hover {
     color: white; /* Hover color */
     background-color: black;
  }
-
+/* Here is the header part */
 header {
     color: white;
     text-shadow: 1px 1px 2px black;
@@ -57,21 +54,30 @@ header {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 h1 {
     font-size: 3em;
     margin: 0;
 }
-
-main {
-    margin: 80px 20px 20px; /* Top margin adjusted to account for fixed nav */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+h2{
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
 }
+/* Here is all the content */
 
+.goal, .strong{
+    background-color: #f5f5f5; /* Fondo suave */
+    padding: 20px; /* Espacio interno */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 30px auto; /* Espaciado externo y centrado */
+    width: 80%; /* Ancho de la caja */
+}
+/* Here are all the containers */
 #container1, #container2 {
     display: flex;
     flex-wrap: wrap;
@@ -79,7 +85,7 @@ main {
     justify-content: center;
 }
 
-#container1 section, #container2 section {
+#container1 section {
     flex: 1 1 30%;
     max-width: 30%;
     border: solid;
@@ -90,8 +96,22 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
-
+#container2 section{
+    flex: 1 1 30%;
+    max-width: 50%;
+    border: solid;
+    height: 500px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* All the sections of the containers for images */
 #section1 {
     background-image: url(/images/Vans.jpeg);
 }
@@ -104,13 +124,19 @@ main {
     background-image: url(/images/Accesorios.jpeg);
 }
 
-#section4 {
-    background-image: url(/images/Date\ Outfit.jpeg);
+#section4, #section5 {
+    font-family: 'Merriweather', serif; 
+    font-size: 1.2rem; 
+    color: #f0f0f0; 
+    line-height: 1.6; 
+    text-align: center; 
+    padding: 20px; 
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin: 15px; 
 }
 
-#section5 {
-    background-image: url(/images/_.jpeg);
-}
 /* here is the footer section  */
 footer {
     background-color: black;
@@ -183,10 +209,6 @@ footer ul{
     align-items: center;
     text-align: center;
 }
-
-
-
-
 footer button {
     
     background-color: black;
@@ -201,14 +223,6 @@ footer button:hover {
     background-color: white;
     color: black;
 }
-
-
-
-
-
-
-
-
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
     nav ul li {

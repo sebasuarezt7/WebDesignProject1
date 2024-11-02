@@ -120,6 +120,13 @@ footer {
     list-style: none;
     align-items: center;
 }
+.content{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
 
 footer a{
     color: white;
@@ -145,6 +152,7 @@ footer ul{
 /* Here start the col part */
 .col{
     display: flex;
+    flex-direction: column;
 }
 
 #payment-images{
@@ -155,19 +163,26 @@ footer ul{
     display: flex;
     justify-content: center;
 }
-.footer-bottom-content{
-    justify-content: center;
-    display: flex;
-    gap: 80px;
-}
 .footer-bottom-content ul{
     display: flex;
 }
 .footer-bottom-content ul li {
     margin: 0 10px; /* Espaciado entre los elementos */
 }
-
-
+.images-box{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.social-media-box{
+    display:flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 
 

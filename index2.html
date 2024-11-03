@@ -7,61 +7,95 @@
     <link rel="stylesheet" href="./css/style_shoe.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Header at the top of the page -->
+    <header id="home">
+        <h1>Welcome to Hype Vision Shoes</h1>
+        <p>Your one-stop shop for the best shoes, from sports to casual and everything in between.</p>
+    </header>
+
+    <!-- Main layout with navigation and content -->
     <div class="layout">
         <nav>
-            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#products">Our Shoes</a></li>
+                <li><a href="./index.html">Streetwear</a></li>
+                <li><a href="#othercategories">Other Categories</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul>
         </nav>
 
-        <!-- Main Content -->
         <main>
-            <!-- Header Section -->
-            <header id="home">
-                <h1>Welcome to your Hype Vision Shoes</h1>
-                <p>Your one-stop shop for the best shoes, from sports to casual and everything in between.</p>
-            </header>
-
-            <!-- About Us Section -->
+            <!-- Main content -->
             <section id="about" class="about-section">
                 <h2>About Us</h2>
-                <p>At Hype Vision Shoes, we believe that the perfect pair of shoes can take you anywhere. We provide a variety of shoes to fit every style and need, ensuring quality, comfort, and durability in every step.</p>
+                <p>At Hype Vision Shoes, we believe that the perfect pair of shoes can take you anywhere. Our mission is to provide a diverse range of footwear that meets the needs of every individual, whether you're hitting the gym, going for a casual outing, or dressing up for a special occasion.</p>
+                <p>With years of experience in the footwear industry, we understand that quality, comfort, and style are paramount. Our curated selection includes running shoes that enhance your performance, casual sneakers that offer both comfort and fashion, and formal shoes that ensure you look your best. Each pair is crafted with attention to detail and the highest standards of materials.</p>
+                <p>We pride ourselves on our commitment to customer satisfaction. Our knowledgeable staff is here to assist you in finding the perfect fit, while our easy-to-navigate online store makes shopping for shoes a breeze. At Hype Vision Shoes, we not only sell footwear; we create experiences that inspire confidence and elevate your everyday life.</p>
+                <p>Join our community of shoe enthusiasts and step into a world where every step matters. We are dedicated to bringing you the latest trends and timeless classics, ensuring you have the right shoes for every journey.</p>
             </section>
-
-            <!-- Our Shoes Section -->
+            
             <h2>Our Shoes</h2>
             <div class="main-content" id="products">
                 <div class="product">
-                    <img src="./images/super-shoes.webp" alt="Running Shoes">
+                    <!--Image source: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcsyYFPb4T1KguzG6Nb2KUvP4qltAIh3vf-A&s-->
+                    <img src="./images/running-shoes.jpeg" alt="Running Shoes">
                     <h3>Running Shoes</h3>
-                    <p>Lightweight and durable, perfect for all your running needs. Price: $50</p>
+                    <p>Lightweight and durable, perfect for all your running needs.</p>
+                    <p>Features: Breathable material, cushioned sole, and excellent grip.</p>
                 </div>
                 <div class="product">
-                    <img src="./images/sneakers.jpg" alt="Casual Sneakers">
+                    <!--Image source: https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2022/10/various_2.jpg-->
+                    <img src="./images/casual-sneakers.jpg" alt="Casual Sneakers">
                     <h3>Casual Sneakers</h3>
-                    <p>Stylish and comfortable for everyday wear. Price: $40</p>
+                    <p>Stylish and comfortable for everyday wear.</p>
+                    <p>Features: Trendy design, multiple color options, and easy to clean.</p>
                 </div>
                 <div class="product">
+                    <!--Image source: https://funkytradition.com/cdn/shop/files/1_2019-Formal-Shoes-Men-Fashion-Black-Design-Wedding-Shoes-For-Men-Brand-Autumn-Footwear-New-Men.jpg?crop=center&height=694&v=1723517819&width=989-->
                     <img src="./images/formal-shoes.jpg" alt="Formal Shoes">
                     <h3>Formal Shoes</h3>
-                    <p>Classic design to keep you looking sharp for any occasion. Price: $70</p>
+                    <p>Classic design to keep you looking sharp for any occasion.</p>
+                    <p>Features: Premium leather, polished finish, and cushioned insole for comfort.</p>
                 </div>
             </div>
 
-            <!-- Contact Section -->
+            <h2>Explore More Categories</h2>
+            <div class="main-content" id="othercategories">
+                <div class="product">
+                    <!--Image source: https://img.freepik.com/premium-photo/colorful-sneakers-children-sitting-wooden-bench_885831-42656.jpg-->
+                    <img src="./images/kids-shoes.jpg" alt="Kids Sneakers">
+                    <h3>Kids Sneakers</h3>
+                    <p>Fun and colorful sneakers for active kids.</p>
+                    <p>Features: Lightweight, flexible sole, and easy to put on.</p>
+                </div>
+                <div class="product">
+                    <!--Image source: https://futcarioca.com/cdn/shop/files/chuteira-campo-rocket-chuteira-campo-rocket-grupo-42-futcarioca-830557_800x.webp?v=1706250082-->
+                    <img src="./images/sport-shoes.jpg" alt="Sports Shoes">
+                    <h3>Sports Shoes</h3>
+                    <p>Designed for performance and comfort, our sports shoes support you through every workout.</p>
+                    <p>Features: Breathable materials, adjustable fit, slip-resistant sole, and durable design.</p>
+                </div>
+            </div>
+
             <section id="contact" class="contact-section">
                 <h2>Contact Us</h2>
                 <p>For more information about our products, feel free to reach us at: contact@hypevisionshoes.com or follow us on our social media channels.</p>
             </section>
         </main>
     </div>
-
-    <!-- Footer -->
+  
     <footer>
+        <div class="footer-bottom">
+        <div class="footer-bottom-content">
+             <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Our Shoes</a></li>
+                <li><a href="#othercategories">Other Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+             </ul>
+        </div>
+    </div>
         <p>&copy; 2024 Hype Vision Shoes. All rights reserved.</p>
     </footer>
 </body>

@@ -29,20 +29,36 @@ nav {
     width: 20%;
     padding: 20px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
 nav ul {
-    display: flex; /* Torna o ul um container flex */
-    flex-direction: column; /* Coloca os itens da lista em uma coluna */
-    padding: 0; /* Remove o padding padrão */
-    margin: 0; /* Remove a margem padrão */
-    list-style: none; /* Remove os marcadores da lista */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 nav li {
-    margin-bottom: 10px; /* Espaçamento entre os itens */
+    margin-bottom: 10px;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dcdcdc;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: lightslategray;
 }
 
 /* Main style */
@@ -128,13 +144,38 @@ footer button:hover {
     color: black;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     nav {
         width: 100%;
     }
 
     .product {
-        width: calc(50% - 40px);
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .layout {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .nav-button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+
+    h1, h2, h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
     }
 }

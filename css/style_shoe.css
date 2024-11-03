@@ -22,12 +22,27 @@ header, footer {
 
 /* Navigation */
 nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     background-color: #dcdcdc;
     width: 20%;
     padding: 20px;
     box-sizing: border-box;
     font-size: 16px;
     text-transform: uppercase;
+}
+
+nav ul {
+    display: flex; /* Torna o ul um container flex */
+    flex-direction: column; /* Coloca os itens da lista em uma coluna */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+    list-style: none; /* Remove os marcadores da lista */
+}
+
+nav li {
+    margin-bottom: 10px; /* Espaçamento entre os itens */
 }
 
 /* Main style */

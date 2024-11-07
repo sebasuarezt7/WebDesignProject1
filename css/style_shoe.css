@@ -95,19 +95,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Centraliza o texto dentro da .product-container */
+    text-align: center;
 }
 
 .product {
     flex: 1;
-    /* text-align: center; Removido se não for necessário */
 }
 
 .product img {
     background-color: #f5f5f5;
     width: calc(100% - 1px);
     height: 500px;
-    object-fit: cover; /* Ajusta a imagem para preencher a altura sem distorção */
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -124,6 +123,7 @@ main {
 .layout {
     display: flex;
 }
+
 /* here is the footer section  */
 footer {
     background-color: black;
@@ -162,6 +162,7 @@ footer ul{
     display: flex;
     padding-bottom: 20px;
 }
+
 /* Here start the col part */
 .col{
     display: flex;

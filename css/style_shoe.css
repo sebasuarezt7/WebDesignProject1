@@ -128,17 +128,17 @@ main {
 footer {
     background-color: black;
     color: white;
+    padding: 50px;
     text-align: center;
-    text-decoration: none;
-    list-style: none;
-    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 .content{
     display:flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 2px;
+    gap: 100px;
 }
 
 footer a{

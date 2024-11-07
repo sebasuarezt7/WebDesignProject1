@@ -35,7 +35,7 @@ nav ul li a {
     font-size: 16px;
     text-transform: uppercase;
     padding: 10px 20px;
-    transition: color 0.3s ease;
+    transition: color 0.7s ease;
 }
 nav ul li a:hover {
     color: white; /* Hover color */
@@ -151,7 +151,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2px;
+    gap: 12.5%;
 }
 
 footer a{
@@ -179,6 +179,7 @@ footer ul{
 .col{
     display: flex;
     flex-direction: column;
+
 }
 
 #payment-images{
@@ -226,6 +227,14 @@ footer button:hover {
 
 .logo{
     align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+ul.social-media-box{
+    padding: 0; 
+    margin: 0; 
 }
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {

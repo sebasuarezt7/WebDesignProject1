@@ -53,16 +53,22 @@ nav li {
     margin-bottom: 10px;
 }
 
+nav ul li a{
+    text-align: left;
+    padding: 0;
+}
+
 .nav-button {
-    display: inline-block;
-    padding: 10px 20px;
+    display: block;
+    padding: 10px 50% 10px 10%;
     background-color: #dcdcdc;
     color: black;
     border-radius: 5px;
     text-decoration: none;
-    margin: 5px;
-    text-align: center;
+    margin: 5px 0;
+    text-align: left;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 .nav-button:hover {

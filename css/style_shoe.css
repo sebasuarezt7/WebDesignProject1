@@ -129,7 +129,6 @@ main {
 .layout {
     display: flex;
 }
-
 /* here is the footer section  */
 footer {
     background-color: black;
@@ -164,6 +163,18 @@ footer ul{
     list-style: none;
     text-align: fixed;
 }
+
+.footer-links {
+    background-color: black;
+    padding: 20px;
+}
+
+.footer-links a {
+    color:black;
+    text-decoration: none;
+    padding: 3px;
+    display: block;
+}
 .wrapper{
     display: flex;
     padding-bottom: 20px;
@@ -186,9 +197,12 @@ footer ul{
 }
 .footer-bottom-content ul{
     display: flex;
+    color: white;
+    text-decoration: underline;
 }
 .footer-bottom-content ul li {
-    margin: 0 10px; 
+    margin: 10px; 
+    color: black
 }
 .images-box{
     display: flex;
@@ -199,7 +213,7 @@ footer ul{
 }
 .social-media-box{
     display:flex;
-    gap: 10px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -212,11 +226,6 @@ footer button {
     color: white;
     border-radius: 5px;
     cursor: pointer;
-}
-
-footer button:hover {
-    background-color: white;
-    color: black;
 }
 
 @media (max-width: 480px) {

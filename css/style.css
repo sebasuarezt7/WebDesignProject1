@@ -7,6 +7,10 @@ html {
 body {
     font-family: 'Lora', serif;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 /* here start the navegation part */
 nav {
     position: fixed;
@@ -91,12 +95,13 @@ h2{
     border: solid;
     height: 500px;
     color: white;
+    font-size: 20px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 #container2 section{
@@ -114,6 +119,7 @@ h2{
 /* All the sections of the containers for images */
 #section1 {
     background-image: url(/images/Vans.jpeg);
+    text-decoration: none;
 }
 
 #section2 {
@@ -121,7 +127,7 @@ h2{
 }
 
 #section3 {
-    background-image: url(/images/Accesorios.jpeg);
+    background-image: url(/images/customize.jpeg);
 }
 
 #section4, #section5 {

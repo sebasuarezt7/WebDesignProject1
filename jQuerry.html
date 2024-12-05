@@ -5,37 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customize Your Style</title>
     <link rel="stylesheet" href="/css/jQuerry.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <header>
-        <h1>Hype Vision - Customize Your Style</h1>
+        <h1>Customize Your Style</h1>
     </header>
-    <main>
-        <section class="customization">
-            <div class="preview">
-                <img id="shirtImage" src="/images/_.jpeg" alt="Customizable Shirt">
-            </div>
-            <div class="options">
-                <h2>Customize Your Shirt</h2>
-                <label for="color">Choose a color:</label>
-                <select id="color">
-                    <option value="white">White</option>
-                    <option value="black">Black</option>
-                    <option value="red">Red</option>
-                    <option value="blue">Blue</option>
-                </select>
 
-                <label for="design">Choose a design:</label>
-                <select id="design">
-                    <option value="none">None</option>
-                    <option value="logo">Logo</option>
-                    <option value="pattern">Pattern</option>
-                </select>
+    <section id="tshirts">
+        <h2>T-Shirts</h2>
+        <img id="tshirtPreview" src="tshirt-white.png" alt="T-shirt preview">
+        <label for="tshirtColor">Choose a color:</label>
+        <select id="tshirtColor">
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="gray">Gray</option>
+        </select>
+        <table>
+            <thead>
+                <tr>
+                    <th>Size</th>
+                    <th>Chest (in cm)</th>
+                    <th>Waist (in cm)</th>
+                    <th>Length (in cm)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Small</td>
+                    <td>90</td>
+                    <td>75</td>
+                    <td>65</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>100</td>
+                    <td>85</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>Large</td>
+                    <td>110</td>
+                    <td>95</td>
+                    <td>75</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-                <button id="addToCart">Add to Cart</button>
-            </div>
-        </section>
-    </main>
+    <section id="hoodies">
+        <h2>Hoodies</h2>
+        <img id="hoodiePreview" src="hoodie-white.png" alt="Hoodie preview">
+        <label for="hoodieColor">Choose a color:</label>
+        <select id="hoodieColor">
+            <option value="white">White</option>
+            <option value="gray">Gray</option>
+            <option value="black">Black</option>
+        </select>
+        <table>
+            <thead>
+                <tr>
+                    <th>Size</th>
+                    <th>Chest (in cm)</th>
+                    <th>Waist (in cm)</th>
+                    <th>Length (in cm)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Small</td>
+                    <td>100</td>
+                    <td>80</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>110</td>
+                    <td>90</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>Large</td>
+                    <td>120</td>
+                    <td>100</td>
+                    <td>80</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
     <script src="/jQuerry.js"></script>
 </body>
 </html>

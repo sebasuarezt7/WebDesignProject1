@@ -1,23 +1,29 @@
-const shirtImage = document.getElementById('shirtImage');
-const colorSelect = document.getElementById('color');
-const designSelect = document.getElementById('design');
+// Helper function to change images based on color selection
+const $ = (selector) => document.querySelector(selector);
 
-colorSelect.addEventListener('change', () => {
-    const color = colorSelect.value;
-    shirtImage.src = `shirt-${color}.png`;
-});
+const setupColorSelector = (selectorId, imageId, images) => {
+    const colorSelector = $(selectorId); 
+    const previewImage = $(imageId);    
 
-designSelect.addEventListener('change', () => {
-    const design = designSelect.value;
-    if (design === 'none') {
-        shirtImage.style.backgroundImage = 'none';
-    } else if (design === 'logo') {
-        shirtImage.style.backgroundImage = 'url(logo.png)';
-    } else if (design === 'pattern') {
-        shirtImage.style.backgroundImage = 'url(pattern.png)';
-    }
-});
+    colorSelector.addEventListener("change", () => {
+        const selectedColor = colorSelector.value;
+        previewImage.src = images[selectedColor];
+    });
+};
 
-document.getElementById('addToCart').addEventListener('click', () => {
-    alert('Shirt added to cart!');
+document.addEventListener("DOMContentLoaded", () => {
+    // T-Shirts Color Options
+    setupColorSelector("#tshirtColor", "#tshirtPreview", {
+        white: "/images/whiteTshirt.jpeg",
+        black: "/images/blackTshirt.jpeg",
+        gray: "/images/grayTshirt.jpeg"
+    });
+
+    // Hoodies Color Options
+    setupColorSelector("#hoodieColor", "#hoodiePreview", {
+        white: "/images/hoodie-white.jpeg",
+        black: "/images/hoodie-black.jpeg",
+        gray: "/images/hoodie-gray.jpeg",
+
+    });
 });

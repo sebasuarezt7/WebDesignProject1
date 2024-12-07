@@ -4,15 +4,23 @@ html {
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 
-body {
+body{
     font-family: 'Lora', serif;
 }
-a{
+
+
+/* This is the first page */
+
+
+.index a{
     text-decoration: none;
     color: white;
 }
+.index footer p{
+    color: white;
+}
 /* here start the navegation part */
-nav {
+.index nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -21,7 +29,7 @@ nav {
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-nav ul {
+.index nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -29,11 +37,11 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+.index nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.index ul li a {
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -41,12 +49,12 @@ nav ul li a {
     padding: 10px 20px;
     transition: color 0.7s ease;
 }
-nav ul li a:hover {
+.index nav ul li a:hover {
     color: white; /* Hover color */
     background-color: black;
  }
 /* Here is the header part */
-header {
+.index header {
     color: white;
     text-shadow: 1px 1px 2px black;
     height: 400px;
@@ -62,18 +70,18 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
-h1 {
+.index h1 {
     font-size: 3em;
     margin: 0;
 }
-h2{
+.index h2{
     text-align: center;
     font-size: 2em;
     padding: 10px;
 }
 /* Here is all the content */
 
-.goal, .strong{
+.index .goal, .strong{
     background-color: #f5f5f5; 
     padding: 20px; 
     border-radius: 15px; 
@@ -82,14 +90,14 @@ h2{
     width: 80%; 
 }
 /* Here are all the containers */
-#container1, #container2 {
+.index #container1, #container2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
 
-#container1 section {
+.index #container1 section {
     flex: 1 1 30%;
     max-width: 30%;
     border: solid;
@@ -104,7 +112,7 @@ h2{
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
-#container2 section{
+.index #container2 section{
     flex: 1 1 30%;
     max-width: 50%;
     border: solid;
@@ -117,20 +125,20 @@ h2{
     text-align: center;
 }
 /* All the sections of the containers for images */
-#section1 {
+.index #section1 {
     background-image: url(/images/Vans.jpeg);
     text-decoration: none;
 }
 
-#section2 {
+.index #section2 {
     background-image: url(/images/ig_\ heavenly_jason.jpeg);
 }
 
-#section3 {
+.index #section3 {
     background-image: url(/images/customize.jpeg);
 }
 
-#section4, #section5 {
+.index #section4, #section5 {
     font-family: 'Merriweather', serif; 
     font-size: 1.2rem; 
     color: #f0f0f0; 
@@ -144,15 +152,22 @@ h2{
 }
 
 /* here is the footer section  */
-footer {
-    background-color: black;
+
+.index footer a {
+    text-decoration: none;
+    color: white !important; /* Forza que el color sea blanco */
+}
+
+.index footer {
+    text-transform: none !important;
+    background-color: rgb(0, 0, 0);
     color: white;
     text-align: center;
     text-decoration: none;
     list-style: none;
     align-items: center;
 }
-.content{
+.index .content{
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -160,64 +175,64 @@ footer {
     gap: 12.5%;
 }
 
-footer a{
+.index footer a{
     color: white;
     text-decoration: none;
 }
 
-footer a:hover{
+.index footer a:hover{
     text-decoration: underline;
 }
-footer ul{
+.index footer ul{
     list-style: none;
 }
-.content {
+.index .content {
     color: white;
     display: flex;
     list-style: none;
     text-align: fixed;
 }
-.wrapper{
+.index .wrapper{
     display: flex;
     padding-bottom: 20px;
     gap: 20px;
 }
 /* Here start the col part */
-.col{
+.index .col{
     display: flex;
     flex-direction: column;
 
 }
 
-#payment-images{
+.index #payment-images{
     display: flex;
 }
 /* Here it starts the footer bottom part */
-.footer-bottom{
+.index .footer-bottom{
     display: flex;
     justify-content: center;
 }
-.footer-bottom-content ul{
+.index .footer-bottom-content ul{
     display: flex;
 }
-.footer-bottom-content ul li {
+.index .footer-bottom-content ul li {
     margin: 0 10px; 
 }
-.images-box{
+.index .images-box{
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.social-media-box{
+.index .social-media-box{
     display:flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-footer button {
+.index footer button {
     
     background-color: black;
     border: none;
@@ -227,63 +242,594 @@ footer button {
     cursor: pointer;
 }
 
-footer button:hover {
+.index button:hover {
     background-color: white;
     color: black;
 }
 
-.logo{
+.index .logo{
     align-items: center;
     justify-content: center;
     align-items: center;
     display: flex;
 
 }
-ul.images-box{
+.index .images-box{
    margin: 2px; 
    padding: 2px;
 }
-ul.social-media-box{
+.index .social-media-box{
     padding: 2px; 
     margin: 2px; 
 }
-ul{
+.index ul{
     padding: 2px;
 }
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
-    nav{
+    .index nav{
         height: 20px;
     }
-    nav a{
+    .index nav a{
         padding: 10px;
     }
-    nav ul li {
+    .index nav ul li {
         margin: 0px;
     }
 
-    header {
+    .index header {
         height: 300px;
     }
 
-    h1 {
+    .index h1 {
         font-size: 2em;
     }
-    .strong{
+    .index .strong{
         display: none;
     }
 
-    #container1 section, #container2 section {
+    .index #container1 section, #container2 section {
         flex: 1 1 100%;
         max-width: 100%;
     }
-    #material{
+    .index #material{
         display: none;
     }
-    .content{
+    .index .content{
         display: block;
     }
-    .wrapper{
+    .index .wrapper{
         display: none;
     }
 }
+
+
+/* This is the second page */
+/* Carlos Vasconcelos (webpage) - n01688393 */
+
+.shoes body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Lora', serif;
+    scroll-behavior: smooth;
+}
+
+/* Styles for header and footer */
+.shoes header, .shoes footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.shoes .header-logo {
+    float: left;
+    margin-right: 15px;
+}
+
+/* Navigation */
+.shoes nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #dcdcdc;
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.shoes nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.shoes nav li {
+    margin-bottom: 10px;
+}
+
+.shoes nav ul li a {
+    text-align: left;
+    padding: 0;
+}
+
+.shoes .nav-button {
+    display: block;
+    padding: 10px 50% 10px 10%;
+    background-color: #dcdcdc;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px 0;
+    text-align: left;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.shoes .nav-button:hover {
+    background-color: lightslategray;
+}
+
+/* Main style */
+.shoes main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.shoes .main-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.shoes .product-container {
+    flex: 1 1 30%;
+    max-width: 30%;
+    border: solid;
+    height: 500px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.shoes .product {
+    flex: 1;
+}
+
+.shoes .product img {
+    background-color: #f5f5f5;
+    width: calc(100% - 1px);
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shoes .about-section {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* General layout */
+.shoes .layout {
+    display: flex;
+}
+
+/* Footer */
+.shoes footer {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.shoes .content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+}
+
+.shoes footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.shoes footer a:hover {
+    text-decoration: underline;
+}
+
+.shoes footer ul {
+    list-style: none;
+}
+
+.shoes .footer-links {
+    background-color: black;
+    padding: 20px;
+}
+
+.shoes .footer-links a {
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    display: block;
+}
+
+.shoes .wrapper {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+/* Here start the col part */
+.shoes .col {
+    display: flex;
+    flex-direction: column;
+}
+
+.shoes #payment-images {
+    display: flex;
+}
+
+/* Footer */
+.shoes .footer-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.shoes .footer-bottom-content ul {
+    display: flex;
+    color: white;
+    text-decoration: underline;
+}
+
+.shoes .footer-bottom-content ul li {
+    margin: 10px;
+    color: black;
+}
+
+.shoes .images-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.shoes .social-media-box {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.shoes footer button {
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .shoes nav {
+        width: 100%;
+    }
+
+    .shoes .product {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .shoes .layout {
+        flex-direction: column;
+    }
+
+    .shoes main {
+        padding: 10px;
+    }
+
+    .shoes .nav-button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .shoes header, .shoes footer {
+        padding: 15px;
+    }
+
+    .shoes h1, .shoes h2, .shoes h3 {
+        font-size: 18px;
+    }
+
+    .shoes p {
+        font-size: 14px;
+    }
+}
+
+/* Here is the cuztomize page */
+
+.customize body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.customize header {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+.customize #hoodiePreview, .customize #tshirtPreview {
+    display: block;
+    margin: 0 auto 10px;
+    width: 200px;
+    height: auto;
+}
+
+.customize label, .customize select, .customize #customization {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.customize table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.customize th, .customize td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.customize th {
+    background-color: #222;
+    color: white;
+}
+
+.customize h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+}
+
+/* here is the footer section */
+.customize footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+}
+
+.customize .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12.5%;
+}
+
+.customize footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.customize footer a:hover {
+    text-decoration: underline;
+}
+
+.customize footer ul {
+    list-style: none;
+}
+
+.customize .content {
+    color: white;
+    display: flex;
+    list-style: none;
+    text-align: fixed;
+}
+
+.customize .wrapper {
+    display: flex;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+.customize #payment-images {
+    display: flex;
+}
+
+/* Here it starts the footer bottom part */
+.customize .footer-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.customize .footer-bottom-content ul {
+    display: flex;
+}
+
+.customize .footer-bottom-content ul li {
+    margin: 0 10px;
+}
+
+.customize .images-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.customize .social-media-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.customize footer button {
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.customize footer button:hover {
+    background-color: white;
+    color: black;
+}
+
+.customize .logo {
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.customize ul.images-box {
+    margin: 2px;
+    padding: 2px;
+}
+
+.customize ul.social-media-box {
+    padding: 2px;
+    margin: 2px;
+}
+
+.customize ul {
+    padding: 2px;
+}
+
+@media (max-width: 768px) {
+    .customize body {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .customize .content {
+        display: block;
+    }
+
+    .customize .wrapper {
+        display: none;
+    }
+}
+
+/* Here is the form page */
+/* General */
+/* General */
+.formValidation{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/images/Justin\ Pierce.jpeg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.formValidation #line {
+    border: solid;
+    margin: 20px 0;
+}
+
+.formValidation h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+/* Formulario */
+.formValidation form {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.formValidation form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formValidation form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.formValidation form input:focus {
+    border-color: #427d92;
+    outline: none;
+    box-shadow: 0 0 5px rgba(62, 149, 177, 0.7);
+}
+
+.formValidation form .error {
+    font-size: 12px;
+    color: rgb(229, 66, 66);
+}
+
+/* Botones */
+.formValidation button {
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.formValidation button:hover {
+    background: #989f9e;
+}
+
+.formValidation button[type="button"] {
+    background: #000000;
+    margin-left: 10px;
+}
+
+.formValidation button[type="button"]:hover {
+    background: #989f9e;
+}
+

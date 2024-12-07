@@ -252,8 +252,14 @@ ul{
 }
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
+    nav{
+        height: 20px;
+    }
+    nav a{
+        padding: 10px;
+    }
     nav ul li {
-        margin: 0 5px;
+        margin: 0px;
     }
 
     header {
@@ -263,9 +269,21 @@ ul{
     h1 {
         font-size: 2em;
     }
+    .strong{
+        display: none;
+    }
 
     #container1 section, #container2 section {
         flex: 1 1 100%;
         max-width: 100%;
+    }
+    #material{
+        display: none;
+    }
+    .content{
+        display: block;
+    }
+    .wrapper{
+        display: none;
     }
 }

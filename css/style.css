@@ -307,44 +307,35 @@ body{
 /* This is the second page */
 /* Carlos Vasconcelos (webpage) - n01688393 */
 
-.shoes body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    font-family: 'Lora', serif;
-    scroll-behavior: smooth;
-}
 
 /* Styles for header and footer */
 .shoes header, .shoes footer {
     width: 100%;
     background-color: black;
     color: white;
-    padding: 50px;
+    padding: 40px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .shoes .header-logo {
-    float: left;
-    margin-right: 15px;
+    float: right;
+    margin-right: 5px;
 }
 
 /* Navigation */
 .shoes nav {
     display: flex;
     flex-direction: column;
-    align-items: start;
     background-color: #dcdcdc;
-    width: 20%;
-    padding: 20px;
+    width: 25%;
+    padding: 50px;
     box-sizing: border-box;
     font-size: 20px;
     text-transform: uppercase;
 }
 
 .shoes nav ul {
-    display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
@@ -361,15 +352,15 @@ body{
 }
 
 .shoes .nav-button {
-    display: block;
-    padding: 10px 50% 10px 10%;
+    display: flex;
+    padding: 10px 10px;
     background-color: #dcdcdc;
     color: black;
     border-radius: 5px;
     text-decoration: none;
     margin: 5px 0;
     text-align: left;
-    transition: background-color 0.3s;
+    transition: background-color 0.7s;
     width: 100%;
 }
 
@@ -418,19 +409,12 @@ body{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.shoes .about-section {
-    background-color: #f5f5f5;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
 /* General layout */
 .shoes .layout {
     display: flex;
 }
 
-/* Footer */
+/* Footer styles */
 .shoes footer {
     background-color: black;
     color: white;
@@ -439,12 +423,10 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.shoes .content {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 100px;
+.shoes .footer-links, .shoes footer a, .shoes .footer-bottom-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .shoes footer a {
@@ -456,10 +438,6 @@ body{
     text-decoration: underline;
 }
 
-.shoes footer ul {
-    list-style: none;
-}
-
 .shoes .footer-links {
     background-color: black;
     padding: 20px;
@@ -467,27 +445,11 @@ body{
 
 .shoes .footer-links a {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
     padding: 3px;
     display: block;
 }
 
-.shoes .wrapper {
-    display: flex;
-    padding-bottom: 20px;
-}
-
-/* Here start the col part */
-.shoes .col {
-    display: flex;
-    flex-direction: column;
-}
-
-.shoes #payment-images {
-    display: flex;
-}
-
-/* Footer */
 .shoes .footer-bottom {
     display: flex;
     justify-content: center;
@@ -495,29 +457,27 @@ body{
 
 .shoes .footer-bottom-content ul {
     display: flex;
-    color: white;
-    text-decoration: underline;
+    gap: 20px;
 }
 
 .shoes .footer-bottom-content ul li {
-    margin: 10px;
+    margin: 20px;
     color: black;
 }
 
-.shoes .images-box {
+.shoes .images-box, .shoes .social-media-box {
     display: flex;
-    gap: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
+.shoes .images-box {
+    gap: 10px;
+}
+
 .shoes .social-media-box {
-    display: flex;
     gap: 50px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .shoes footer button {
@@ -528,6 +488,29 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
+
+.shoes .content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+}
+
+.shoes .wrapper {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.shoes .col {
+    display: flex;
+    flex-direction: column;
+}
+
+.shoes #payment-images {
+    display: flex;
+}
+
 
 @media (max-width: 480px) {
     .shoes nav {
@@ -836,6 +819,7 @@ body{
 /* Here start clothes page
 /* Header styles */
 .clothes header {
+    text-align: center;
     padding: 30px;
     background-color: #222;
     color: #fff;
@@ -873,7 +857,7 @@ body{
     font-size: 16px;
     text-transform: uppercase;
     padding: 10px 20px;
-    transition: color 0.7s ease;
+    transition: color 0.5s ease;
 }
 
 .clothes nav a:hover {
@@ -886,7 +870,7 @@ body{
 
 .clothes .main-content {
     display: flex;
-    gap: 20px;
+    gap: px;
     justify-content: center;
 }
 
@@ -915,46 +899,86 @@ body{
 }
 
 /* Footer styles */
-.clothes footer {
-    background-color: #222;
+.clothes footer, .shoes footer {
+    background-color: black;
     color: white;
-    text-align: center;
     padding: 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.clothes footer .content,
-.clothes footer .wrapper {
+.clothes .footer-bottom, .shoes .footer-bottom {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    text-align: left;
 }
 
-.clothes footer h4 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
+.clothes .footer-bottom-content ul, .shoes .footer-bottom-content ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 20px;
 }
 
-.clothes footer a {
-    text-decoration: none;
-    color: white;
+.clothes .footer-bottom-content ul li, .shoes .footer-bottom-content ul li {
+    margin: 0;
+    color: black;
 }
 
-.clothes footer a:hover {
-    text-decoration: underline;
-}
-
-.clothes footer .social-media-box,
-.clothes footer .payment-images {
+.clothes .images-box, .shoes .images-box {
     display: flex;
     gap: 10px;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.clothes footer .social-media-box img,
-.clothes footer .payment-images img {
-    width: 40px;
-    height: 40px;
+.clothes .social-media-box, .shoes .social-media-box {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.clothes footer button, .shoes footer button {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.clothes .content, .shoes .content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+}
+
+.clothes footer a, .shoes footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.clothes footer a:hover, .shoes footer a:hover {
+    text-decoration: underline;
+}
+
+.clothes footer ul, .shoes footer ul {
+    list-style: none;
+}
+
+.clothes .footer-links, .shoes .footer-links {
+    background-color: black;
+    padding: 20px;
+}
+
+.clothes .footer-links a, .shoes .footer-links a {
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    display: block;
 }
 
 /* Responsive design */

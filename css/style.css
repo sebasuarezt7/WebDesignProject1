@@ -440,28 +440,35 @@ body{
     display: flex;
 }
 
-
 @media (max-width: 480px) {
     .shoes nav {
         width: 100%;
+        padding: 20px 10px;
     }
 
-    .shoes .product {
-        width: 100%;
-        margin-bottom: 20px;
+    .shoes .nav-button {
+        font-size: 16px;
+        padding: 8px 15px;
     }
 
-    .shoes .layout {
-        flex-direction: column;
+    .shoes nav ul li a {
+        font-size: 14px;
+        padding: 8px;
     }
 
     .shoes main {
         padding: 10px;
     }
 
-    .shoes .nav-button {
-        font-size: 16px;
-        padding: 8px 15px;
+    .shoes .layout {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .shoes .product-container {
+        flex: 1 1 100%;
+        margin-bottom: 15px;
+        height: auto;
     }
 
     .shoes header {
@@ -470,10 +477,74 @@ body{
 
     .shoes h1, .shoes h2, .shoes h3 {
         font-size: 18px;
+        margin-bottom: 10px;
     }
 
     .shoes p {
         font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    /* Footer */
+    .shoes footer {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .shoes .footer-bottom-content ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shoes .footer-bottom-content ul li {
+        margin: 5px 0;
+    }
+
+    .shoes footer button {
+        font-size: 16px;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .shoes .product img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .shoes .images-box {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    .shoes .social-media-box {
+        gap: 20px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .shoes .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .shoes .wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .shoes .col {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .shoes .main-content {
+        flex-direction: column;
     }
 }
 

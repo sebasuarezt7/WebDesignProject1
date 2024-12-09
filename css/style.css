@@ -274,6 +274,9 @@ body{
     .index nav{
         height: 20px;
     }
+    .index .material{
+        display: block;
+    }
     .index nav a{
         padding: 10px;
     }

@@ -1,9 +1,9 @@
 const $ = (selector) => document.querySelector(selector);
 
 const createAccount = (evt) => {
-  evt.preventDefault(); // Previene el envío del formulario
+  evt.preventDefault(); 
 
-  // Valores de los campos
+
   const firstName = $("#firstName").value.trim();
   const lastName = $("#lastName").value.trim();
   const age = Number($("#age").value.trim());

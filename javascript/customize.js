@@ -52,9 +52,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const hoodieSubmitButton = $("#hoodieSubmitButton");
     const hoodieOutputMessage = $("#hoodieOutputMessage");
 
-    // Manejar el clic del botón
+ 
     hoodieSubmitButton.addEventListener("click", (event) => {
-        event.preventDefault(); // Evitar recargar la página
+        event.preventDefault(); 
         const color = hoodieColor.value;
         const text = hoodieCustomText.value.trim();
         if (text) {

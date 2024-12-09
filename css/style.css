@@ -309,13 +309,16 @@ body{
 
 
 /* Styles for header and footer */
+.shoes {
+    display: flex;
+    flex-direction: column;  /* Começamos com um layout em coluna */
+}
 .shoes header, .shoes footer {
-    width: 100%;
-    background-color: black;
-    color: white;
-    padding: 40px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        padding: 30px 20px;
+        background-color: #222;
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .shoes .header-logo {
@@ -328,10 +331,10 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #dcdcdc;
-    width: 25%;
-    padding: 50px;
+    width: 20%;
+    padding: 30px 20px;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
@@ -343,17 +346,12 @@ body{
 }
 
 .shoes nav li {
-    margin-bottom: 10px;
-}
-
-.shoes nav ul li a {
-    text-align: left;
-    padding: 0;
+    margin-bottom: 5px;
 }
 
 .shoes .nav-button {
     display: flex;
-    padding: 10px 10px;
+    padding: 20px 1px;
     background-color: #dcdcdc;
     color: black;
     border-radius: 5px;
@@ -362,7 +360,9 @@ body{
     text-align: left;
     transition: background-color 0.7s;
     width: 100%;
+    word-wrap: break-word;
 }
+
 
 .shoes .nav-button:hover {
     background-color: lightslategray;
@@ -418,9 +418,10 @@ body{
 .shoes footer {
     background-color: black;
     color: white;
-    padding: 50px;
+    padding: 30px 10%;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
 }
 
 .shoes .footer-links, .shoes footer a, .shoes .footer-bottom-content ul {
@@ -444,10 +445,10 @@ body{
 }
 
 .shoes .footer-links a {
-    color: black;
-    text-decoration: underline;
-    padding: 3px;
-    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
 }
 
 .shoes .footer-bottom {
@@ -820,7 +821,7 @@ body{
 /* Header styles */
 .clothes header {
     text-align: center;
-    padding: 30px;
+    padding: 30px 20px;
     background-color: #222;
     color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);

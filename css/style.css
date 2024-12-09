@@ -154,6 +154,10 @@ body{
 /* here is the footer section  */
 
 .index footer a {
+    text-transform: none !important;
+}
+
+.index footer a {
     text-decoration: none;
     color: white !important; /* Forza que el color sea blanco */
 }
@@ -311,9 +315,9 @@ body{
 /* Styles for header and footer */
 .shoes {
     display: flex;
-    flex-direction: column;  /* Começamos com um layout em coluna */
+    flex-direction: column;
 }
-.shoes header, .shoes footer {
+.shoes header {
         text-align: center;
         padding: 30px 20px;
         background-color: #222;
@@ -362,7 +366,6 @@ body{
     width: 100%;
     word-wrap: break-word;
 }
-
 
 .shoes .nav-button:hover {
     background-color: lightslategray;
@@ -415,81 +418,6 @@ body{
 }
 
 /* Footer styles */
-.shoes footer {
-    background-color: black;
-    color: white;
-    padding: 30px 10%;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-}
-
-.shoes .footer-links, .shoes footer a, .shoes .footer-bottom-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.shoes footer a {
-    color: white;
-    text-decoration: none;
-}
-
-.shoes footer a:hover {
-    text-decoration: underline;
-}
-
-.shoes .footer-links {
-    background-color: black;
-    padding: 20px;
-}
-
-.shoes .footer-links a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    transition: color 0.3s ease;
-}
-
-.shoes .footer-bottom {
-    display: flex;
-    justify-content: center;
-}
-
-.shoes .footer-bottom-content ul {
-    display: flex;
-    gap: 20px;
-}
-
-.shoes .footer-bottom-content ul li {
-    margin: 20px;
-    color: black;
-}
-
-.shoes .images-box, .shoes .social-media-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.shoes .images-box {
-    gap: 10px;
-}
-
-.shoes .social-media-box {
-    gap: 50px;
-}
-
-.shoes footer button {
-    background-color: black;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .shoes .content {
     display: flex;
     flex-direction: row;
@@ -536,7 +464,7 @@ body{
         padding: 8px 15px;
     }
 
-    .shoes header, .shoes footer {
+    .shoes header {
         padding: 15px;
     }
 
@@ -897,7 +825,7 @@ body{
     border-radius: 10px;
 }
 
-/* Footer styles */
+/* Footer styles clothes & shoes */
 .clothes footer, .shoes footer {
     background-color: black;
     color: white;
@@ -997,8 +925,7 @@ body{
         max-width: 80%;
     }
 
-    .clothes footer .content,
-    .clothes footer .wrapper {
+    .clothes footer .content, .clothes footer .wrapper, .shoes{
         flex-direction: column;
         gap: 20px;
     }

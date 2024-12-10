@@ -450,6 +450,7 @@ body{
     .shoes nav {
         width: 100%;
         padding: 20px 10px;
+        overflow-x: hidden;
     }
 
     .shoes .nav-button {
@@ -496,10 +497,19 @@ body{
     .shoes footer {
         padding: 10px 5x;
         text-align: center;
-        display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .shoes footer .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .shoes footer .wrapper{
+        padding-bottom: 0px;
+       
+    }
+    .shoes .footer-bottom{
+        flex-direction: row !important; /* Sobrescribe otras reglas */
     }
 
     .shoes .footer-bottom-content ul {
@@ -510,8 +520,12 @@ body{
         margin: 0;
     }
     .shoes .footer-bottom-content ul li {
-        margin: 5px 0;
+        margin: 100spx 0;
     }
+    .shoes .footer-bottom-content {
+        display: block;
+      }
+
 
     .shoes footer button {
         font-size: 16px;
@@ -521,7 +535,17 @@ body{
         margin-top: 10px;
          box-sizing: border-box;
     }
+    .shoes #material{
+        display: none;
+    }
+    .shoes .content{
+        display: block;
+    }
+    .shoes .wrapper{
+        display: none;
+    }
 
+    /* End footer */
     .shoes .product img {
         width: 100%;
         height: auto;
@@ -964,10 +988,26 @@ nav a.nav-button:hover {
 
 .clothes footer button, .shoes footer button {
     background-color: black;
+    border: none;
+    padding: 10px 20px;
     color: white;
-    border-radius: 50px;
+    border-radius: 5px;
     cursor: pointer;
 }
+.clothes footer button, .shoes footer button{
+    background-color: black;
+    color: white;
+}
+.clothes footer button:hover, 
+.shoes footer button:hover {
+    background-color: white; 
+    color: black; 
+    cursor: pointer; 
+}
+
+
+
+
 
 .clothes .content, .shoes .content {
     display: flex;
